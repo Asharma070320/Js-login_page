@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login-Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="user">
+        <form id="validationForm">
+            <label for="username" style="text-t;">Username:</label>
+            <input type="text" id="username" name="username" required placeholder="Name">
+            <div class="error" id="usernameError"></div>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+            <div class="error" id="passwordError"></div>
+          <button type="submit" class="btn1" style="font-weight: 700;">Login</button>
+            <div class="checkbox">
+                <label for="rememberMe" style="font-weight: 500; font-size: 0.8rem;">Remember Me</label>
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 9rem ;" >
+            <button type="button" class="btn2" id="cancelBtn">Cancel</button>
+            <p class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </p>
+        </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
